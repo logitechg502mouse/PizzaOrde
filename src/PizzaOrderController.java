@@ -35,9 +35,13 @@ public class PizzaOrderController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         pizzaSizeChoice.getItems().addAll(pizzaSize);
         pizzaSizeChoice.setOnAction(this::orderListing);
+        pizzaSizeChoice.setValue(pizzaSize[0]);
+
         pizzaOrderChoice.getItems().addAll(pizzaAmount);
         pizzaOrderChoice.setValue(pizzaAmount[0]);
         pizzaOrderChoice.setOnAction(this::orderListing);
+
+        ordr.setText("Size of Pizza:\nCrust Type:\nToppings:\nNumber of Pizza:");
         
     }
 
@@ -63,7 +67,6 @@ public class PizzaOrderController implements Initializable {
             toppings += pineapple.getText() + "\n";
         }
 
-
         return toppings;
     }
     
@@ -87,9 +90,6 @@ public class PizzaOrderController implements Initializable {
             crust = "please choose a crust";
         }
 
-        
-
-        
         ordr.setText(
             String.format("Size of Pizza: %s\nCrust Type: %s\nToppings:\n%s\nNumber of Pizza: %s", size,crust,toppingsListing(), orderings)
         );
