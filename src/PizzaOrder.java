@@ -1,5 +1,6 @@
 import java.io.IOException;
 import javafx.application.Application;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -16,7 +17,7 @@ public class PizzaOrder extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("PizzaOrder.fxml"));
         primaryStage.setScene(new Scene(root, 700, 700)); 
 
-        primaryStage.show();
+        primaryStage.show();      
     }
 }
 
