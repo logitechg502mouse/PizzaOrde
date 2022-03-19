@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -22,8 +21,7 @@
       </Label>
       <HBox prefHeight="306.0" prefWidth="600.0">
          <children>
-            <Label fx:id="ordrFinal" alignment="TOP_LEFT" prefHeight="311.0" prefWidth="382.0" />
-            <ImageView fx:id="pizzaView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="pizzaOrder" alignment="TOP_LEFT" prefHeight="311.0" prefWidth="382.0" text="nulldeez" />
          </children>
       </HBox>
    </children>
